@@ -19,7 +19,7 @@ Thermal-серия, ProjectE и ещё ~50 модов. Без магии. Еди
 1. Установи ваниль 1.7.10 и **Forge 1.7.10-10.13.4.1614** (через TLauncher / официальный лаунчер).
 2. Склонируй репозиторий:
    ```bat
-   git clone https://github.com/<твой-ник>/Gornilo-Evolucii-BETA-0.01v.git
+   git clone https://github.com/Jabanz/Gornilo-Evolucii-BETA-0.01v.git
    ```
 3. Укажи путь к своей игровой папке в `launcher\game-dir.txt`, например:
    ```
