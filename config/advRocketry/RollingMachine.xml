@@ -1,0 +1,492 @@
+<!-->
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="true">
+	<Recipe timeRequired="100" power="1">
+		<input>
+			<oreDict>sheetIron</oreDict>
+			<oreDict>sheetIron</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:pressureTank</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="200" power="2">
+		<input>
+			<oreDict>sheetSteel</oreDict>
+			<oreDict>sheetSteel</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:pressureTank;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="1">
+		<input>
+			<oreDict>sheetAluminum</oreDict>
+			<oreDict>sheetAluminum</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:pressureTank;1;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1000" power="8">
+		<input>
+			<oreDict>sheetTitanium</oreDict>
+			<oreDict>sheetTitanium</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:pressureTank;1;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="200">
+		<input>
+			<oreDict>plateIron</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductsheet;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotSilicon</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductplate;1;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="200">
+		<input>
+			<oreDict>plateCopper</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductsheet;1;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="200">
+		<input>
+			<oreDict>plateSteel</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductsheet;1;6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="200">
+		<input>
+			<oreDict>plateTitanium</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductsheet;1;7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="200">
+		<input>
+			<oreDict>plateAluminum</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductsheet;1;9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="200">
+		<input>
+			<oreDict>plateTitaniumAluminide</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:advancedRocketryproductsheet</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="200">
+		<input>
+			<oreDict>plateTitaniumIridium</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:advancedRocketryproductsheet;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotAluminum</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductplate;1;9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotCMBSteel</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.plate_combine_steel</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotSchrabidium</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.plate_schrabidium</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotGunMetal</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.plate_gunmetal</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotMikhail</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotAdvancedAlloy</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.plate_advanced_alloy</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotCobalt</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotTitanium</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductplate;1;7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotAlcled</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotVanady</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotAlumel</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotWeaponSteel</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.plate_weaponsteel</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotMagnesium</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotCopper</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemPlates</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotBronze</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemPlates;1;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotGold</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemPlates;1;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotAluminium</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotCaravky</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotSilver</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;14</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotVanadoalumite</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotGermanium</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;18</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotSaturnite</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.plate_saturnite</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotIridium;4</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductplate;1;10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotDuralumin</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotIron</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemPlates;1;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotRedbrass</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotMuntsa</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotPlatinum</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotTungsten</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotLead</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemPlates;1;6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotVitalium</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotFerromanganese</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotDuraSteel</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.plate_dura_steel</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotTitaniumAluminide</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:advancedRocketryproductplate</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotSteel</oreDict>
+		</input>
+		<output>
+			<itemStack>libVulpes:libVulpesproductplate;1;6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotAluminumbronze</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotElectrum</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;13</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotZinc</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;15</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotSpinel</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;12</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotTin</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemPlates;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotChromium</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;11</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotInvar</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotNickel</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotNichrome</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:alloysplate;1;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotTitaniumIridium</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:advancedRocketryproductplate;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="300" power="20">
+		<input>
+			<oreDict>ingotManganese</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:iuplate;1;16</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

@@ -1,0 +1,12 @@
+# build artifacts
+dist/
+tools/
+jdk8/
+*.zip
+*.log
+# local
+*.lnk
+hs_err_pid*.log
+# os
+Thumbs.db
+desktop.ini

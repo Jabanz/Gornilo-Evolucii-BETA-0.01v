@@ -1,0 +1,3057 @@
+<!-->
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="true">
+	<Recipe timeRequired="40" power="20">
+		<input>
+			<itemStack>advancedRocketry:item.carbonScrubberCartridge;1;172800</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:item.carbonScrubberCartridge</itemStack>
+			<itemStack>minecraft:coal;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="1">
+		<input>
+			<itemStack>minecraft:bone</itemStack>
+			<fluidStack>advancedRocketry:nitrogen;10</fluidStack>
+		</input>
+		<output>
+			<itemStack>minecraft:dye;5;15</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<fluidStack>advancedRocketry:oxygen;10</fluidStack>
+			<fluidStack>advancedRocketry:hydrogen;10</fluidStack>
+		</input>
+		<output>
+			<fluidStack>advancedRocketry:rocketfuel;20</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mekanism:ScubaTank</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mekanism:ScubaTank;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:sapphire_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:sapphire_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:GlowstoneBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:GlowstoneBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steel_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steel_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.mask_piss</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.mask_piss;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.fau_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.fau_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.liquidator_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.liquidator_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.taurun_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.taurun_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:imp_lappack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:imp_lappack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:sapphire_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:sapphire_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajr_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajr_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hev_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hev_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetSilver</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetSilver;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hev_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hev_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ultimate_solar_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ultimate_solar_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.mask_of_infamy</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.mask_of_infamy;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steamsuit_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steamsuit_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_legs_red</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_legs_red;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetElectrum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetElectrum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ruby_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ruby_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_helmet_grey</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_helmet_grey;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:adv_lappack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:adv_lappack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateElectrum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateElectrum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Avaritia:Infinity_Pants</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Avaritia:Infinity_Pants;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsPlatinum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsPlatinum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bismuth_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bismuth_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.alloy_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.alloy_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ChaosBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ChaosBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mekanism:GasMask</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mekanism:GasMask;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorJetpackElectric</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorJetpackElectric;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorJetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorJetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.paa_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.paa_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bj_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bj_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.nossy_hat</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.nossy_hat;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:LapisLazuliLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:LapisLazuliLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetNickel</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetNickel;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorHazmatLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorHazmatLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:advanced_solar_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:advanced_solar_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajr_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajr_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:OsmiumLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:OsmiumLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:GlowstoneChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:GlowstoneChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:LapisLazuliHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:LapisLazuliHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:draconicChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:draconicChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.t51_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.t51_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajro_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajro_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorAdvBatpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorAdvBatpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_rm_armor_2</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_rm_armor_2;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:OsmiumChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:OsmiumChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:hazmatleggins</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:hazmatleggins;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.paa_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.paa_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mekanism:Jetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mekanism:Jetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetTin</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetTin;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cape_radiation</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cape_radiation;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.gas_mask_mono</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.gas_mask_mono;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cmb_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cmb_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_paa_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_paa_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:LapisLazuliChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:LapisLazuliChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.fau_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.fau_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dns_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dns_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bj_plate_jetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bj_plate_jetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.envsuit_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.envsuit_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsSilver</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsSilver;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.euphemium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.euphemium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateBronze</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateBronze;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetCopper</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetCopper;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.jackt</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.jackt;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:wyvernBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:wyvernBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemStaticBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemStaticBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bismuth_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bismuth_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.rpa_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.rpa_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ncrpa_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ncrpa_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateTin</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateTin;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:BronzeLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:BronzeLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.trenchmaster_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.trenchmaster_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.t51_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.t51_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dnt_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dnt_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemSolarHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemSolarHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.envsuit_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.envsuit_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:singular_solar_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:singular_solar_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.starmetal_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.starmetal_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.schrabidium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.schrabidium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.liquidator_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.liquidator_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cape_schrabidium</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cape_schrabidium;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorQuantumHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorQuantumHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dns_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dns_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsSilver</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsSilver;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dnt_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dnt_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsNickel</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsNickel;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cobalt_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cobalt_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.rpa_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.rpa_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorQuantumChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorQuantumChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorNanoHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorNanoHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.robes_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.robes_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Avaritia:Infinity_Shoes</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Avaritia:Infinity_Shoes;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_rm_armor_1</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_rm_armor_1;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_gem_armor_3</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_gem_armor_3;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsElectrum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsElectrum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:SteelLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:SteelLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steel_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steel_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cape_gasmask</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cape_gasmask;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraUtilities:sonar_goggles</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraUtilities:sonar_goggles;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.security_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.security_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorAlloyChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorAlloyChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsNickel</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsNickel;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajro_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajro_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cobalt_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cobalt_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:hybrid_solar_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:hybrid_solar_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.asbestos_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.asbestos_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajr_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajr_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.titanium_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.titanium_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steamsuit_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steamsuit_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steamsuit_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steamsuit_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.gas_mask_olde</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.gas_mask_olde;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:GlowstoneLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:GlowstoneLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.titanium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.titanium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ashglasses</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ashglasses;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.euphemium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.euphemium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemNightvisionGoggles</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemNightvisionGoggles;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MineFactoryReloaded:plastic.chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MineFactoryReloaded:plastic.chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:ObsidianChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:ObsidianChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.gas_mask_m65</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.gas_mask_m65;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:hazmatboosts</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:hazmatboosts;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:draconicBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:draconicBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsTin</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsTin;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dnt_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dnt_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.trenchmaster_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.trenchmaster_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateLead</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateLead;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bj_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bj_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsCopper</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsCopper;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:GlowstoneHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:GlowstoneHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bj_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bj_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.jackt2</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.jackt2;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Avaritia:Infinity_Helm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Avaritia:Infinity_Helm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:ObsidianBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:ObsidianBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ChaosLeggs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ChaosLeggs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajr_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajr_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsInvar</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsInvar;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.euphemium_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.euphemium_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.titanium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.titanium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.asbestos_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.asbestos_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:ObsidianLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:ObsidianLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_plate_red</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_plate_red;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:hazmatchest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:hazmatchest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.mask_rag</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.mask_rag;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajro_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajro_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ncrpa_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ncrpa_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorCFPack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorCFPack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_dm_armor_0</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_dm_armor_0;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.starmetal_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.starmetal_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.alloy_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.alloy_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bismuth_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bismuth_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsCopper</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsCopper;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Avaritia:Infinity_Chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Avaritia:Infinity_Chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.robes_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.robes_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_rm_armor_0</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_rm_armor_0;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBatpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBatpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_gem_armor_2</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_gem_armor_2;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mekanism:ArmoredJetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mekanism:ArmoredJetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:perjetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:perjetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cmb_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cmb_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.security_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.security_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:sapphire_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:sapphire_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.t51_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.t51_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steel_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steel_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetPlatinum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetPlatinum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsElectrum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsElectrum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.envsuit_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.envsuit_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.trenchmaster_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.trenchmaster_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.envsuit_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.envsuit_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.platePlatinum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.platePlatinum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cmb_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cmb_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:topaz_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:topaz_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.euphemium_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.euphemium_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.taurun_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.taurun_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.robes_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.robes_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsLead</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsLead;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bismuth_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bismuth_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.schrabidium_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.schrabidium_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:BronzeHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:BronzeHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dieselsuit_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dieselsuit_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:per_lappack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:per_lappack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.trenchmaster_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.trenchmaster_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:SteelBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:SteelBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.t51_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.t51_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorRubBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorRubBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorHazmatHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorHazmatHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:topaz_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:topaz_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:topaz_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:topaz_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:impjetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:impjetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.liquidator_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.liquidator_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorEnergypack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorEnergypack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dns_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dns_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_helmet_red</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_helmet_red;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.schrabidium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.schrabidium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cmb_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cmb_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetBronze</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetBronze;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_dm_armor_3</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_dm_armor_3;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateSilver</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateSilver;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cobalt_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cobalt_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.rpa_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.rpa_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.starmetal_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.starmetal_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.security_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.security_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.fau_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.fau_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.rpa_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.rpa_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.robes_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.robes_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_legs_grey</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_legs_grey;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MineFactoryReloaded:plastic.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MineFactoryReloaded:plastic.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsTin</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsTin;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:SteelHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:SteelHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:advjetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:advjetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:ObsidianHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:ObsidianHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:BronzeChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:BronzeChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_gem_armor_1</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_gem_armor_1;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.taurun_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.taurun_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MineFactoryReloaded:plastic.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MineFactoryReloaded:plastic.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dieselsuit_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dieselsuit_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hev_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hev_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.goggles</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.goggles;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetInvar</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetInvar;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.helmetLead</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.helmetLead;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateNickel</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateNickel;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:SteelChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:SteelChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ajro_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ajro_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.zirconium_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.zirconium_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.gas_mask</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.gas_mask;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:OsmiumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:OsmiumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ruby_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ruby_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsLead</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsLead;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:spectral_solar_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:spectral_solar_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:topaz_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:topaz_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.titanium_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.titanium_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mekanism:FreeRunners</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mekanism:FreeRunners;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.no9</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.no9;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorQuantumLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorQuantumLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.paa_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.paa_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_boots_red</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_boots_red;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steel_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steel_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:hazmathelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:hazmathelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:LapisLazuliBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:LapisLazuliBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:draconicLeggs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:draconicLeggs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dieselsuit_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dieselsuit_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:draconicHelm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:draconicHelm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.alloy_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.alloy_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ChaosChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ChaosChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.asbestos_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.asbestos_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_dm_armor_2</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_dm_armor_2;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:wyvernHelm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:wyvernHelm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ncrpa_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ncrpa_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.steamsuit_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.steamsuit_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.alloy_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.alloy_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsBronze</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsBronze;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_paa_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_paa_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateCopper</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateCopper;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorNanoLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorNanoLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.legsPlatinum</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.legsPlatinum;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.bj_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.bj_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.plateInvar</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.plateInvar;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ruby_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ruby_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_gem_armor_0</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_gem_armor_0;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MineFactoryReloaded:glass.helm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MineFactoryReloaded:glass.helm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsInvar</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsInvar;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.security_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.security_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_paa_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_paa_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorNanoChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorNanoChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.taurun_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.taurun_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MineFactoryReloaded:plastic.helm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MineFactoryReloaded:plastic.helm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cobalt_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cobalt_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ThermalFoundation:armor.bootsBronze</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ThermalFoundation:armor.bootsBronze;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ruby_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ruby_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:ChaosHelm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:ChaosHelm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.liquidator_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.liquidator_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.ncrpa_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.ncrpa_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:sapphire_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:sapphire_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorHazmatChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorHazmatChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_plate_grey</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_plate_grey;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorQuantumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorQuantumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dieselsuit_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dieselsuit_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_boots_grey</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_boots_grey;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>industrialupgrade:itemArmorNanoBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>industrialupgrade:itemArmorNanoBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hev_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hev_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:BronzeBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:BronzeBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.asbestos_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.asbestos_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:wyvernLeggs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:wyvernLeggs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.schrabidium_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.schrabidium_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.cape_hidden</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.cape_hidden;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MekanismTools:OsmiumHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MekanismTools:OsmiumHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dns_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dns_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.dnt_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.dnt_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>DraconicEvolution:wyvernChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>DraconicEvolution:wyvernChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_rm_armor_3</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_rm_armor_3;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.hazmat_paa_legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.hazmat_paa_legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.starmetal_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.starmetal_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ProjectE:item.pe_dm_armor_1</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ProjectE:item.pe_dm_armor_1;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>hbm:item.fau_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>hbm:item.fau_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

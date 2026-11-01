@@ -1,0 +1,81 @@
+{
+    "images": {
+        "background": {
+            "image": "custommainmenu:textures/gui/mainmenu_bg.png",
+            "posX": 0,
+            "posY": 0,
+            "width": 1920,
+            "height": 1080,
+            "alignment": "top_left"
+        }
+    },
+    "buttons": {
+        "singleplayer": {
+            "text": "menu.singleplayer",
+            "posX": -100,
+            "posY": 52,
+            "width": 200,
+            "height": 20,
+            "action": { "type": "openGui", "gui": "singleplayer" }
+        },
+        "multiplayer": {
+            "text": "menu.multiplayer",
+            "posX": -100,
+            "posY": 76,
+            "width": 200,
+            "height": 20,
+            "action": { "type": "openGui", "gui": "multiplayer" }
+        },
+        "mods": {
+            "text": "Mods",
+            "posX": -100,
+            "posY": 100,
+            "width": 200,
+            "height": 20,
+            "action": { "type": "openGui", "gui": "mods" }
+        },
+        "options": {
+            "text": "menu.options",
+            "posX": -100,
+            "posY": 132,
+            "width": 98,
+            "height": 20,
+            "action": { "type": "openGui", "gui": "options" }
+        },
+        "quit": {
+            "text": "menu.quit",
+            "posX": 2,
+            "posY": 132,
+            "width": 98,
+            "height": 20,
+            "action": { "type": "quit" }
+        }
+    },
+    "texts": {
+        "title": {
+            "text": "√Œ–Õ»ÀŒ ›¬ŒÀﬁ÷»»",
+            "posX": -137,
+            "posY": 10,
+            "color": -256,
+            "alignment": "top_center",
+            "fontSize": 2.0
+        },
+        "subtitle": {
+            "text": "“≈’ÕŒ-—¡Œ– ¿ 1.7.10 | HBM | IC2 | MEKANISM",
+            "posX": -137,
+            "posY": 34,
+            "color": -8355712,
+            "alignment": "top_center",
+            "fontSize": 1.0
+        }
+    },
+    "other": {
+        "splash-text": {
+            "texts": "",
+            "posX": 90,
+            "posY": 70,
+            "color": -256,
+            "alignment": "top_center"
+        }
+    }
+}
