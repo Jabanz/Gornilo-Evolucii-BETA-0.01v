@@ -101,6 +101,24 @@ Thermal-серия, ProjectE и ещё ~50 модов. Без магии. Еди
 
 ---
 
+## 🧪 BerlitMod (наш мод для пака)
+
+В репозитории есть папка [`berlit-mod/`](berlit-mod) — исходники мода **Berlit** (автор **Beggar**, MIT),
+доработанного нами для сборки:
+
+- **Cobble Generator MK1/MK2/MK3** — генератор булыжника на EU с апгрейдами (Overclocker / Energy Storage / Transformer)
+- Молекулярный трансформер (6×6 входов, 4 улучшения)
+- Спавнеры существ Tier 1 и Tier 2 (карты мобов, дропы, ядра)
+- Обрабатывающие машины: дробитель, компрессор, металлоформовочный, электропечь (импорт рецептов IC2)
+- Интеграции: CraftTweaker, NEI
+
+Собранный jar: [`berlit-mod/dist/berlit-dev.jar`](berlit-mod/dist/berlit-dev.jar) — кладётся в `mods/`.
+Подробности и баланс — в [berlit-mod/NOTES-gornilo.md](berlit-mod/NOTES-gornilo.md).
+
+Требования: IC2 2.2.828 experimental (есть в паке).
+
+---
+
 ## 📜 Лицензия и благодарности
 
 - Код конфигов, скриптов и лаунчера в этом репозитории — **MIT** (см. [LICENSE](LICENSE)).
