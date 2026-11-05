@@ -37,8 +37,8 @@ public class TileEntityCobbleGenerator extends TileEntity implements IEnergySink
     private static final int[] BASE_TICKS = { 40, 20, 10 };
     /** EU consumed per tick for each tier. */
     private static final int[] EU_PER_TICK = { 8, 16, 32 };
-    private static final int[] ENERGY_CAPACITY = { 8000, 16000, 32000 };
-    private static final int[] SINK_TIER = { 1, 2, 3 };
+    private static final int[] ENERGY_CAPACITY = { 8000, 8000, 8000 };
+    private static final int[] SINK_TIER = { 4, 4, 4 };
 
     public static final int SLOT_OUTPUT = 0;
     public static final int SLOT_UPGRADE_START = 1;

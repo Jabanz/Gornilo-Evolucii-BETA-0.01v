@@ -9,26 +9,39 @@ import net.minecraft.item.ItemStack;
 import ru.beggar.berlit.tileentity.TileEntityCobbleGenerator;
 import ru.beggar.berlit.upgrade.UpgradeHelper;
 
+/**
+ * Container for the cobblestone generator: one output slot plus the four upgrade slots, laid out with the shared
+ * {@link MachineLayout} geometry so the screen matches the rest of the Berlit machines.
+ */
 public class ContainerCobbleGenerator extends Container {
 
-    private static final int SLOT_SIZE = 18;
+    private static final int SLOT_SIZE = MachineLayout.SLOT;
 
     private final TileEntityCobbleGenerator tile;
 
     public ContainerCobbleGenerator(InventoryPlayer playerInventory, TileEntityCobbleGenerator tile) {
         this.tile = tile;
 
-        addSlotToContainer(new Slot(tile, TileEntityCobbleGenerator.SLOT_OUTPUT, 62, 35) {
+        addSlotToContainer(
+            new Slot(
+                tile,
+                TileEntityCobbleGenerator.SLOT_OUTPUT,
+                MachineLayout.OUTPUT_X + SLOT_SIZE,
+                MachineLayout.OUTPUT_Y + SLOT_SIZE) {
 
-            @Override
-            public boolean isItemValid(ItemStack stack) {
-                return false;
-            }
-        });
+                @Override
+                public boolean isItemValid(ItemStack stack) {
+                    return false;
+                }
+            });
 
         for (int i = 0; i < TileEntityCobbleGenerator.SLOT_UPGRADE_COUNT; i++) {
             addSlotToContainer(
-                new Slot(tile, TileEntityCobbleGenerator.SLOT_UPGRADE_START + i, 98 + i * SLOT_SIZE, 59) {
+                new Slot(
+                    tile,
+                    TileEntityCobbleGenerator.SLOT_UPGRADE_START + i,
+                    MachineLayout.UPGRADE_X + i * SLOT_SIZE,
+                    MachineLayout.UPGRADE_Y) {
 
                     @Override
                     public boolean isItemValid(ItemStack stack) {
@@ -40,11 +53,16 @@ public class ContainerCobbleGenerator extends Container {
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 9; col++) {
                 addSlotToContainer(
-                    new Slot(playerInventory, col + row * 9 + 9, 8 + col * SLOT_SIZE, 84 + row * SLOT_SIZE));
+                    new Slot(
+                        playerInventory,
+                        col + row * 9 + 9,
+                        MachineLayout.PLAYER_X + col * SLOT_SIZE,
+                        MachineLayout.PLAYER_TOP + row * SLOT_SIZE));
             }
         }
         for (int col = 0; col < 9; col++) {
-            addSlotToContainer(new Slot(playerInventory, col, 8 + col * SLOT_SIZE, 142));
+            addSlotToContainer(
+                new Slot(playerInventory, col, MachineLayout.PLAYER_X + col * SLOT_SIZE, MachineLayout.HOTBAR_Y));
         }
     }
 

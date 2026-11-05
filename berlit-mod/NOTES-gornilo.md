@@ -1,43 +1,42 @@
 # BerlitMod — наша доработка (сборка «Горнило Эволюции»)
 
 Оригинальный мод: **Berlit** для Minecraft 1.7.10 (Forge), автор **Beggar** (MIT).
-Источник: приватный репозиторий автора.
+Исходный репозиторий: https://github.com/Beggar-ru/BerlitMod
 
-## Что добавлено нами (2026-11)
+## Что добавлено нами
 
-### Cobble Generator (MK1 / MK2 / MK3)
-Генератор булыжника с привязкой к IC2 EU:
+### Cobblestone Generator MK1 / MK2 / MK3
+Новая EU-машина, портированная на архитектуру 0.19.0:
 
-- `block/BlockCobbleGenerator.java` — блок (3 уровня, метаданные)
-- `tileentity/TileEntityCobbleGenerator.java` — логика: производство булыжника за EU,
-  слоты апгрейдов (Overclocker / Energy Storage / Transformer), синхронизация с клиентом
-- `gui/ContainerCobbleGenerator.java`, `gui/GuiCobbleGenerator.java` — интерфейс
-- `util/InventoryUtils.java` — хелперы
-- 9 текстур: `assets/berlit/textures/blocks/cobble_generator_*`, `gui/cobble_generator.png`
-- Правки: `Berlit.java` (регистрация), `gui/GuiHandler.java` (ID GUI),
-  `network/MachineSyncHandler.java` (синк), `lang/en_US.lang`, `lang/ru_RU.lang`
+- `machine/BlockCobbleGenerator.java` — блок, три уровня со своими текстурами
+- `tileentity/TileEntityCobbleGenerator.java` — IC2 `IEnergySink` (tier 4, буфер 8000),
+  прогресс за блок, 4 слота апгрейдов, авто-выгрузка в соседние инвентари
+- `gui/ContainerCobbleGenerator.java`, `gui/GuiCobbleGenerator.java` — по `MachineLayout`,
+  тёмная тема, прогресс-бар и счётчик EU
+- `util/InventoryUtils.java` — хелпер выгрузки
+- `GuiHandler` — открытие GUI, `MachineSyncHandler` — синхронизация на клиент
+- 9 текстур: `assets/berlit/textures/blocks/cobble_generator_*`
+- Локализация: `en_US.lang` + `ru_RU.lang`
+- Рецепты: железо + редстоун + печь (MK1), золото + алмаз (MK2), золото + изумруд (MK3)
 
-**Баланс (MK1 → MK3):**
-| Уровень | EU/t | Время на блок | Слоты апгрейдов |
-|---|---|---|---|
-| MK1 | 8 EU/t | 5 сек | 2 |
-| MK2 | 32 EU/t | 2 сек | 3 |
-| MK3 | 128 EU/t | 0.5 сек | 4 |
+**Баланс:**
+| Уровень | EU/t | Время на блок | Слоты апгрейдов | Буфер |
+|---|---|---|---|---|
+| MK1 | 8 | 5 сек | 4 | 8000 |
+| MK2 | 16 | 2.5 сек | 4 | 8000 |
+| MK3 | 32 | 1.25 сек | 4 | 8000 |
+
+## Статус
+
+- Ветка `feature/cobble-generator` в репозитории друга, **Pull Request #1**:
+  https://github.com/Beggar-ru/BerlitMod/pull/1
+- Сборка проверена: `gradlew spotlessApply build` → **BUILD SUCCESSFUL**
+  (jar `berlit-0.19.0-feature-cobble-generator.1+c94337c74f.jar`, 274 КБ)
+- `spotlessApply` и `checkstyleMain` проходят, локализация на двух языках
 
 ## Сборка
 
-Требуется **JDK 25** (Gradle-демон, GTNH-конвенция) и **Java 8** для запуска.
-JDK 8 ставится тулчейном автоматически.
+Требуется **JDK 25** (Gradle-демон) + Java 8 (тулчейн RFG ставит сам).
+Готовый jar: `build/libs/berlit-<версия>.jar`.
 
-```bash
-./gradlew build
-```
-Готовый jar: `build/libs/berlit-<версия>.jar`
-
-В этом репозитории рядом лежит собранный `dist/berlit-dev.jar` (с нашим Cobble Generator).
-
-## Зависимости
-
-- Обязательно: IC2 2.2.828 experimental
-- Опционально: CraftTweaker, NotEnoughItems, Draconic Evolution, Botania, Alfheim
-- Jars в `libs/` — для офлайн-сборки (те же версии, что в модпаке)
+Собранный нами jar лежит в `dist/berlit-dev.jar`.
